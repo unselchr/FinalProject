@@ -42,6 +42,7 @@ fs.readdir(__dirname+"/BSData",function(err,files){
       xml2.parseString(data,function(error,result){
         bsData.push({[file]:result});
         //console.log(bsData);
+        fs.writeFileSync(__dirname+"/"+file,JSON.stringify(result));
       })
     })
   })
