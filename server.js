@@ -8,9 +8,16 @@ const xmlParse = require("fast-xml-parser");
 const fs=require("fs");
 const xml2 = require("xml2js");
 const path=require("path");
+const session=require("express-session");
+const passport=require("passport");
 // Define middleware here
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(
+  session({secret:"haeresis",resave:true,saveUninitialized:true})
+);
+app.use(passport.initialize());
+app.use(passport.session());
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
@@ -18,37 +25,22 @@ if (process.env.NODE_ENV === "production") {
 //PARSE BSData
 
 var bsData=[];
-// fs.readFile(__dirname +"/BSData/Imperium - Astra Militarum.cat",function(err,data){
-//   if(err){
-//     throw err;
-//   }
-//   //console.log(data);
-//   //bsData=xmlParse.convertToJson(data);
 
-//   xml2.parseString(data,function(error,result){
-//     if(error) throw error;
-//     console.log(result);
+// fs.readdir(__dirname+"/BSData",function(err,files){
+//   if(err)throw err;
+//   files.forEach(function(file){
+//     //console.log(file);
+//     fs.readFile(__dirname+"/BSData/"+file,function(err,data){
+//       if(err)throw err;
+//       //bsData.push({[file]:data.})
+//       xml2.parseString(data,function(error,result){
+//         bsData.push({[file]:result});
+//         //console.log(bsData);
+//         fs.writeFileSync(__dirname+"/"+file,JSON.stringify(result));
+//       })
+//     })
 //   })
-//   //console.log("INCOMMING!");
-//   console.log(bsData);
 // })
-fs.readdir(__dirname+"/BSData",function(err,files){
-  if(err)throw err;
-  files.forEach(function(file){
-    //console.log(file);
-    fs.readFile(__dirname+"/BSData/"+file,function(err,data){
-      if(err)throw err;
-      //bsData.push({[file]:data.})
-      xml2.parseString(data,function(error,result){
-        bsData.push({[file]:result});
-        //console.log(bsData);
-        fs.writeFileSync(__dirname+"/"+file,JSON.stringify(result));
-      })
-    })
-  })
-})
-//console.log(jsonObj);
-// Add routes, both API and view
 app.use(routes);
 
 app.listen(PORT, function () {
