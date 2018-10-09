@@ -41,10 +41,10 @@ var bsData=[];
 //     })
 //   })
 // })
-//app.use(routes);
-app.get("/api/hello",(req,res)=>{
-  res.send({express:"hello from express"})
-});
+app.use(routes);
+// app.get("/api/hello",(req,res)=>{
+//   res.send({express:"hello from express"})
+// });
 app.listen(PORT, function () {
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
 });
