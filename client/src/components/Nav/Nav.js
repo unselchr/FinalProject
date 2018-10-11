@@ -22,7 +22,7 @@ const Nav = () => (
         </div>
       </li>
     </ul>
-    <img src="/FinalProject/client/public/warhammer40k-logo.png" alt="W40K Logo"></img>
+    <img src= "nav/warhammer40k-logo.png" alt="WH40K Logo"/>
   </div>
 </nav>
 );
