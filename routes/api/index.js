@@ -1,6 +1,11 @@
 const router = require("express").Router();
 const unitData=require("./unitData");
-
+const auth=require("./auth");
 // unit data routes
-router.use("/unitData",unitData);
-module.exports = router;
+
+module.exports=function(app,passport){
+  //app.use(
+    require("./auth")(app,passport)
+    
+  //);
+}
