@@ -1,6 +1,18 @@
-#Navbar1 {
-    background-color: rgb(24, 56, 170)
+.navbar {
+    position: relative;
 }
 #NavLogo {
-    justify-content: center
+    position: absolute;
+    left: 50%;
+    margin-left: -50px !important;  /* 50% of your logo width */
+    display: block;
+    height: 50px;
+    width: 150px;
+    padding-bottom: 5px;
+}
+.navbar-brand {
+    font-style: bold;
+}
+.nav-link {
+    font-style: bold;
 }

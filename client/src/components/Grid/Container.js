@@ -1,12 +1,13 @@
 import React from "react";
+import "./Container.css";
 
 export const Container = ({ fluid, children }) => (
   <div className={`container${fluid ? "-fluid" : ""}`}>
     {children}
-    <div class="w3-container"> 
-      <h2>With a Container</h2>
-        <p>The w3-container class is one of the most important W3.CSS classes.</p>
-        <p>It provides correct margins, padding, alignments, and more, to most HTML elements.</p>
+    <div class="row"> 
+      <div class="column" id="column1">Column</div>
+      <div class="column" id="column2">Column</div>
+      <div class="column" id="column3">Column</div>
     </div>
   </div>
 );
