@@ -15,15 +15,15 @@ const Nav = () => (
     <ul class="navbar-nav">
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
+          Rosters
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">New Squad</a>
-          <a class="dropdown-item" href="#">Saved Squads</a>
+          <a class="dropdown-item" href="#">New Roster</a>
+          <a class="dropdown-item" href="#">Saved Rosters</a>
         </div>
       </li>
     </ul>
-    <img src= "warhammer40k-logo.png" alt="WH40K Logo"/>
+    <img id= "NavLogo" src= "./warhammer40k-logo.png" alt="WH40K Logo"/>
   </div>
 </nav>
 );
