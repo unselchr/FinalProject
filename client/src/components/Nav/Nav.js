@@ -3,9 +3,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import $ from 'jquery';
 import Popper from 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+import "./Nav.css";
 
 const Nav = () => (
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav id="Navbar1" class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">WH40K</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -22,7 +23,7 @@ const Nav = () => (
         </div>
       </li>
     </ul>
-    <img src= "nav/warhammer40k-logo.png" alt="WH40K Logo"/>
+    <img src= "warhammer40k-logo.png" alt="WH40K Logo"/>
   </div>
 </nav>
 );
