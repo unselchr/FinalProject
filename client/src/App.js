@@ -4,14 +4,16 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
 import Home from "./pages/Home";
-
+import SignUp from "./pages/signUp";
 const App=()=>(
   <Router>
     <div>
       <Nav/>
       <Switch>
         <Route exact path="/"component={Home}/>
+        <Route exact path="/signUp"component={SignUp} />
         <Route component={NoMatch}/>
+        
       </Switch>
     </div>
   </Router>

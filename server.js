@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
-const routes = require("./routes");
+
 const app = express();
 const PORT = process.env.PORT || 3001;
 const xmlParse = require("fast-xml-parser");
@@ -41,7 +41,10 @@ var bsData=[];
 //     })
 //   })
 // })
-app.use(routes);
+//app.use(
+  require("./routes")(app,passport)
+//);
+//app.use(routes);
 // app.get("/api/hello",(req,res)=>{
 //   res.send({express:"hello from express"})
 // });
