@@ -15,6 +15,7 @@ class Home extends Component{
     return(
       <Container fluid>
         <Row>
+          <p>{this.state.test}</p>
         </Row>
       </Container>
     )
