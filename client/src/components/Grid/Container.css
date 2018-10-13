@@ -1,7 +1,26 @@
+html { 
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsN8w8rwrmVaWiWjZBL4A6jEv2fBpRru0PpAJPhUsO4n86BuGv") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 .col-md-12 {
-    background-color: rgb(194, 41, 41);
     height: 100%;
+    width: 100%;
     /* margin: 0; */
-    margin-bottom: 2em;
     position: relative;
+    text-align: center;
+    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsN8w8rwrmVaWiWjZBL4A6jEv2fBpRru0PpAJPhUsO4n86BuGv");  */
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+}
+.col-md-8 {
+    height: 500px;
+    width: 600px;
+    background-color: blue;
+    margin: 0;
+    display: inline-block;
 }

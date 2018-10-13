@@ -14,9 +14,8 @@ class Home extends Component{
   render(){
     return(
       <Container fluid>
-        <Row>
           <p>{this.state.test}</p>
-        </Row>
+          <img src="https://www.games-workshop.com/resources/touts/2018-03-03/40K//40K_MultiCol_Newto40K_180303.jpg" alt="Smiley" style={{height:300, width:200}}/>
       </Container>
     )
   }
