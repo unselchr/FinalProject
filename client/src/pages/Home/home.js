@@ -13,11 +13,10 @@ class Home extends Component{
   }
   render(){
     return(
-      <Container>
-        <p>Container</p>
-        <Col style={{justifyContent: "center"}}>
-        <div></div>
-        </Col>
+      <Container fluid>
+        <Row>
+          <p>{this.state.test}</p>
+        </Row>
       </Container>
     )
   }

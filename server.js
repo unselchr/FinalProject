@@ -46,9 +46,8 @@ var bsData=[];
 //   })
 // })/////////////above is some legacy code involving a failed attempt to integrate the bsdata 
 //app.use(
-  require("./routes")(app,passport)
+require("./routes")(app,passport)
 require("./config/passport/passport")(passport, models.user);
-
 //);
 //app.use(routes);
 // app.get("/api/hello",(req,res)=>{
