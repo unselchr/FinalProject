@@ -10,6 +10,10 @@ const xml2 = require("xml2js");
 const path=require("path");
 const session=require("express-session");
 const passport=require("passport");
+
+var db = require("./models");
+var models = require("./models");
+
 // Define middleware here
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -40,14 +44,27 @@ var bsData=[];
 //       })
 //     })
 //   })
-// })
+// })/////////////above is some legacy code involving a failed attempt to integrate the bsdata 
 //app.use(
   require("./routes")(app,passport)
+require("./config/passport/passport")(passport, models.user);
+
 //);
 //app.use(routes);
 // app.get("/api/hello",(req,res)=>{
 //   res.send({express:"hello from express"})
 // });
+var syncOptions = { force: false };
+
+// If running a test, set syncOptions.force to true
+// clearing the `testdb`
+if (process.env.NODE_ENV === "test") {
+  syncOptions.force = true;
+}
+db.sequelize.sync(syncOptions).then(function(){
+  
+
 app.listen(PORT, function () {
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
 });
+})
