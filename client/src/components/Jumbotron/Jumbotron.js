@@ -3,9 +3,7 @@ import "./Jumbotron.css"
 // import { Container } from "constants";
 
 const Jumbotron = ({ children }) => (
-  <div
-    className="jumbotron"
-  >
+  <div className="jumbotron">
     {children}
   </div>
 );

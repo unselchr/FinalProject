@@ -7,8 +7,6 @@ export const Col = ({ size, children }) => (
     <div>
       <div class="row"> 
         <div class="column" id="column1">Column</div>
-        <div class="column" id="column2">Column</div>
-        <div class="column" id="column3">Column</div>
       </div>
     </div>  
   </div>

@@ -1,12 +1,6 @@
 #column1 {
     background-color: rgb(60, 34, 206);
 }
-#column2 {
-    background-color: rgb(86, 209, 116);
-}
-#column3 {
-    background-color: rgb(156, 30, 30);
-}
 /* Container for flexboxes */
 .row {
     display: flex;
@@ -19,5 +13,6 @@
     flex: 1;
     padding: 10px;
     height: 100%;
+    align: center;
     /* overflow: hidden; */
 }
