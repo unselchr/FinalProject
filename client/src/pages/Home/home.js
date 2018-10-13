@@ -12,10 +12,12 @@ class Home extends Component{
       .catch(err=>console.log(err));
   }
   render(){
+    console.log(this.state.test);
     return(
       <Container fluid>
-          <p>{this.state.test}</p>
-          <img src="https://www.games-workshop.com/resources/touts/2018-03-03/40K//40K_MultiCol_Newto40K_180303.jpg" alt="Smiley" style={{height:300, width:200}}/>
+        <Row>
+          <p>{this.state.test.data}</p>
+        </Row>
       </Container>
     )
   }

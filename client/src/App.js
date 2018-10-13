@@ -5,6 +5,7 @@ import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
 import Home from "./pages/Home";
 import SignUp from "./pages/signUp";
+import SignIn from "./pages/signIn";
 const App=()=>(
   <Router>
     <div>
@@ -13,6 +14,7 @@ const App=()=>(
         <Route exact path="/"component={Home}/>
         <Route exact path="/Home" component={Home} />
         <Route exact path="/signUp"component={SignUp} />
+        <Route exact path="/signIn"component={SignIn}/>
         <Route component={NoMatch}/>
         
       </Switch>
