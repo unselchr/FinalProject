@@ -13,10 +13,11 @@ class Home extends Component{
   }
   render(){
     return(
-      <Container fluid>
-        <Row>
-        </Row>
-      </Container>
+      {{Container}}
+      // <Container fluid>
+      //   <Row>
+      //   </Row>
+      // </Container>
     )
   }
 }
