@@ -1,18 +1,18 @@
-#column1 {
-    background-color: rgb(60, 34, 206);
-}
-/* Container for flexboxes */
-.row {
-    display: flex;
-    height: 100%;
-}
-/* Create three equal columns that sits next to each other */
-.column {
-    -webkit-flex: 1;
+.col-md-6 {
+    /* -webkit-flex: 1;
     -ms-flex: 1;
-    flex: 1;
+    flex: 1; */
     padding: 10px;
-    height: 100%;
-    align: center;
+    /* height: 100%; */
+    box-align: center;
+    display: flex;
+    background-color: blue;
+    position: absolute;
     /* overflow: hidden; */
+}
+.formBox {
+    height: 50px;
+    width: 50px;
+    border-color: black;
+    border-width: 10px;
 }

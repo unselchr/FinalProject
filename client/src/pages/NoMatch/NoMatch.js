@@ -5,8 +5,7 @@ import "./NoMatch.css";
 
 const NoMatch = () => (
   <Container fluid>
-    <Row>
-      <Col size="md-12">
+      <Col size="md-6">
         <Jumbotron>
           <h3>404 Page Not Found</h3>
           <h1>
@@ -14,7 +13,6 @@ const NoMatch = () => (
           </h1>
         </Jumbotron>
       </Col>
-    </Row>
   </Container>
 );
 

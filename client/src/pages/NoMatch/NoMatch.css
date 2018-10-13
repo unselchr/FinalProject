@@ -2,3 +2,7 @@
     height: 100px;
     width: 100px;
 }
+.md-6 {
+    justify-content: center;
+    width: 50%;
+}
