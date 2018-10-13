@@ -43,7 +43,7 @@ class Form extends Component {
         "email":this.state.email,
         "password":this.state.password
       })
-        .then(response=>console.log(response))
+        .then(response => window.location.href = "/" + response)
         .catch(err=>console.log(err));
     }
     else{

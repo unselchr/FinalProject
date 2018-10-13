@@ -12,10 +12,11 @@ class Home extends Component{
       .catch(err=>console.log(err));
   }
   render(){
+    console.log(this.state.test);
     return(
       <Container fluid>
         <Row>
-          <p>{this.state.test}</p>
+          <p>{this.state.test.data}</p>
         </Row>
       </Container>
     )
