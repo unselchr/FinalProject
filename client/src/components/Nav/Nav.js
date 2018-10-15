@@ -4,8 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import Popper from 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import "./Nav.css";
-import API from "./../../utils/API";
-import LoginForm from "./../signIn";
+//import API from "./../../utils/API";
+//import LoginForm from "./../signIn";
 import axios from "axios";
 class Nav extends React.Component {
   state = {
@@ -29,25 +29,25 @@ class Nav extends React.Component {
   }
   render() {
       return (
-        <nav id="Navbar1" class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="/Home">WH40K</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <nav id="Navbar1" className="navbar navbar-expand-lg navbar-light bg-light">
+          <a className="navbar-brand" href="/Home">WH40K</a>
+          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="/Home" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <div className="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul className="navbar-nav">
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle" href="/Home" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Rosters
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="/signup">Sign Up</a>
-                  <a class="dropdown-item" href="/signin">Sign In</a>
-                  <a class="dropdown-item" href="/newRoster">Create Roster</a>
-                  <a class="dropdown-item" href="/savedRosters">Saved Rosters</a>
+                <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a className="dropdown-item" href="/signup">Sign Up</a>
+                  <a className="dropdown-item" href="/signin">Sign In</a>
+                  <a className="dropdown-item" href="/newRoster">Create Roster</a>
+                  <a className="dropdown-item" href="/savedRosters">Saved Rosters</a>
                 </div>
               </li>
-              <div class="nav-item">
+              <div className="nav-item">
                   {this.state.isLoggedIn}
               </div>
             </ul>
