@@ -2,9 +2,9 @@
     position: relative;
 }
 #NavLogo {
-    position: fixed;
+    position: relative;
     left: 50%;
-    margin-left: -80px !important;  /* 50% of your logo width */
+    margin: -270px !important;  /* 50% of your logo width */
     /* display: block; */
     height: 50px;
     width: 150px;
@@ -15,4 +15,9 @@
 }
 .nav-link {
     font-style: bold;
+}
+.nav-item {
+    padding-top: 10px;
+    padding-left: 5px;
+    margin-left: 5px;
 }

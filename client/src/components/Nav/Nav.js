@@ -41,15 +41,17 @@ class Nav extends React.Component {
                   Rosters
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="/NewRoster">New Roster</a>
+                  <a class="dropdown-item" href="/signup">Sign Up</a>
+                  <a class="dropdown-item" href="/signin">Sign In</a>
+                  <a class="dropdown-item" href="/CreateRoster">Create Roster</a>
                   <a class="dropdown-item" href="/SavedRosters">Saved Rosters</a>
                 </div>
               </li>
-              <li class="nav-item">
-                {this.state.isLoggedIn}
-              </li>
-              <img id="NavLogo" href="/Home" src="http://www.sourcecomicsandgames.com/wp-content/uploads/2018/04/warhammer-40k-logo.png" alt="WH40K Logo" />
+              <div class="nav-item">
+                  {this.state.isLoggedIn}
+              </div>
             </ul>
+            <img id="NavLogo" href="/Home" src="http://www.sourcecomicsandgames.com/wp-content/uploads/2018/04/warhammer-40k-logo.png" alt="WH40K Logo" />
           </div>
         </nav>
       );

@@ -1,26 +1,29 @@
 html { 
-    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsN8w8rwrmVaWiWjZBL4A6jEv2fBpRru0PpAJPhUsO4n86BuGv") no-repeat center center fixed; 
+    background: url("http://www.4usky.com/data/out/25/164198982-dark-space-wallpapers.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  }
-.col-md-12 {
-    height: 100%;
-    width: 100%;
-    /* margin: 0; */
     position: relative;
+    z-index: -1;
+  }
+.welcomeDiv {
+    height: 300px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    z-index: auto;
+    margin-left: 200px;
+    margin-top: 100px;
+    border-color: black;
+    border-width: 5px;
     text-align: center;
-    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsN8w8rwrmVaWiWjZBL4A6jEv2fBpRru0PpAJPhUsO4n86BuGv");  */
-    /* -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; */
 }
-.col-md-8 {
-    height: 500px;
-    width: 600px;
-    background-color: blue;
-    margin: 0;
-    display: inline-block;
+.columnDiv {
+    height: 100vh;
+    width: 700px;
+    background-color: rgb(243, 245, 238);
+    position: absolute;
+    z-index: 1;
+    margin-left: 330px;
 }

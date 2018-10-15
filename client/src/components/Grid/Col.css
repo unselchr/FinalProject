@@ -1,18 +1,18 @@
-.col-md-6 {
-    /* -webkit-flex: 1;
+/* .col-md-6 {
+    -webkit-flex: 1;
     -ms-flex: 1;
-    flex: 1; */
+    flex: 1; 
     padding: 10px;
-    /* height: 100%; */
+    height: 100%;
     box-align: center;
     display: flex;
     background-color: blue;
     position: absolute;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .formBox {
     height: 50px;
     width: 50px;
     border-color: black;
     border-width: 10px;
-}
+} */

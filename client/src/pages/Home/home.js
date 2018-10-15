@@ -14,11 +14,14 @@ class Home extends Component{
   render(){
     console.log(this.state.test);
     return(
-      <Container fluid>
-        <Row>
-          <p>{this.state.test.data}</p>
-        </Row>
-      </Container>
+          // <p>{this.state.test.data}</p>
+        <div className="columnDiv">
+          <div className="welcomeDiv">
+            <p>Welcome, Conscript! Sign in or Sign up and build your 40K Roster.</p>
+            <a class="welcomeSI" href="/signin">Sign In</a>
+            <a class="welcomeSU" href="/signup">Sign Up</a>
+          </div>
+        </div>
     )
   }
 }

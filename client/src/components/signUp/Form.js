@@ -60,9 +60,9 @@ class Form extends Component {
   render() {
     // Notice how each input has a `value`, `name`, and `onChange` prop
     return (
-      <div>
+      <div class="formDiv">
         <p>
-          Sign up for the Haeresis
+          Sign up to build your 40K Roster
         </p>
         <form className="form">
           <input
