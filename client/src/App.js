@@ -6,6 +6,7 @@ import Nav from "./components/Nav";
 import Home from "./pages/Home";
 import SignUp from "./pages/signUp";
 import SignIn from "./pages/signIn";
+import RosterContainer from "./pages/CreateRoster";
 const App=()=>(
   <Router>
     <div>
@@ -15,6 +16,7 @@ const App=()=>(
         <Route exact path="/Home" component={Home} />
         <Route exact path="/signUp"component={SignUp} />
         <Route exact path="/signIn"component={SignIn}/>
+        <Route exact path="/newRoster"component={RosterContainer}/>
         <Route component={NoMatch}/>
         
       </Switch>
