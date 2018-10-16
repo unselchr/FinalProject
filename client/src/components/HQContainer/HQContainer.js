@@ -27,7 +27,7 @@ class HQContainer extends React.Component {
         
         <div className="card" onClick={this.props.addHQ}>
           <div className="card-body">
-            <h5 className="card-title">Add HQ</h5>
+            <h5 className="card-title"></h5>
           </div>
         </div>
       </div>
