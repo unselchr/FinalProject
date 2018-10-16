@@ -1,14 +1,14 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import $ from 'jquery';
-import Popper from 'popper.js';
+//import $ from 'jquery';
+//import Popper from 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import "./unit.css";
 
 class Unit extends React.Component {
   constructor(props) {
     super(props);
-    state = {
+    this.state = {
       name: this.props.name||"No Name Passed In",
       points: this.props.points||-1,
       powerLevel: this.props.powerLevel||-1,
