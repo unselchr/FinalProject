@@ -12,3 +12,25 @@ We have access to Repos of current roster information that others have compiled 
 
   - Responsiblities
   Matt will work on the layout for the client UI side. Chris is working on the data structure and how to probably implement it. Routing and other back end duties will be tackled in unison after that.
+
+#Week Two
+
+  -We have added Passport functionality with forms ready for signing in and signing up. We have an indicator to show sign in status. We have added accordion functionality in showing off what can be added to your roster. Each page is represented, but still needs styling in relation to what we have added and subtracted.
+  
+  -Some squad building features were taken away as an array of options were too overwhelming. We narrowed our focus to a specific faction. Focusing on a single faction opens up more time for more functionality, testing and styling.
+
+  #Functionality
+  -Home Page: Welcome Page with description about the app. Links in the main <div> with links to Sign Up and Sign in. The Nav features a dropdown with links to Sign Up, Sign In, Create Roster and View Rosters. 
+  -Sign in page has a form to sign in with email and password.
+  -Sign up has forms for email, password and confirm password. 
+  -Create Roster has an accordion with opening functionality that reveals unit information. Above that the user has an option of selecting different tab factions. We might be limiting those to one, but they look great.
+  -NoMatch page has a div with a 404 message.
+  -Saved Rosters page has yet to be worked on since we are in the process of adding content to the Roster page that generates information to this page.
+  #Screenshots
+  App visibility
+  -https://drive.google.com/drive/folders/1Bg8mVKJdCM8tZgWb3Pf7nfZBuUMZY_T6?usp=sharing
+  
+  
+  -Remaining responsibilities
+  https://drive.google.com/file/d/1qgu_adeToUA25w2HhPikxiXYQWo0xyqt/view?usp=sharing
+
