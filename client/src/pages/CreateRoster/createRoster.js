@@ -15,6 +15,7 @@ class CreateRoster extends React.Component {
   addHQ=function(){
     const hqs=units.hq;
     console.log(hqs);
+    
   }
   render() {
     return (<div>
