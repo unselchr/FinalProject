@@ -12,17 +12,17 @@ class Unit extends React.Component {
       name: this.props.name||"No Name Passed In",
       points: this.props.points||-1,
       powerLevel: this.props.powerLevel||-1,
-      img: this.props.img||""
+      img: this.props.img||"",
+      clickHandler:this.props.clickHandler.bind(this)
     }
   }
   render() {
     return (
-      <div className="card">
-        <img class="card-img-top" src={this.state.img} alt="Unit icon not found" />
+      <div className="card" onClick={this.state.clickHandler}>
+        <img className="card-img-top" src={this.state.img} alt="Unit icon not found" />
         <div className="card-body">
           <h5 className="card-title">{this.state.name}</h5>
           <p className="card-text">{"Points: " + this.state.points+"   Power Level: "+this.state.powerLevel}</p>
-          <button className="btn btn-primary" onClick={this.props.handleEdit}>Edit</button>
         </div>
       </div>
     )
