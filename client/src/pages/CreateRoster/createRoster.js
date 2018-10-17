@@ -20,7 +20,6 @@ class CreateRoster extends React.Component {
   render() {
     return (<div>
       <div>
-        <h1>INDEX</h1>
         <div className="btn-group" role="group" aria-label="Basic example">
           <button type="button" className="btn btn-secondary">CHAOS</button>
           <button type="button" className="btn btn-secondary">IMPERIUM</button>

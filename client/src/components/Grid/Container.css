@@ -1,5 +1,5 @@
 html { 
-    background: url("http://www.4usky.com/data/out/25/164198982-dark-space-wallpapers.jpg") no-repeat center center fixed; 
+    background: url("./thumb-1920-601973.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -10,7 +10,7 @@ html {
 .welcomeDiv {
     height: 200px;
     width: 300px;
-    background-color: rgb(117, 130, 146);
+    background-color: rgb(134, 140, 146);
     padding-top: 30px;
     position: relative;
     z-index: auto;
