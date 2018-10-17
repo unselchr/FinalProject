@@ -60,10 +60,8 @@ class Form extends Component {
   render() {
     // Notice how each input has a `value`, `name`, and `onChange` prop
     return (
-      <div class="formDiv">
-        <p>
-          Sign up to build your 40K Roster
-        </p>
+      <div class="formDivSU">
+        <p className="fontSU">Sign up to build your 40K Roster</p>
         <form className="form">
           <input
             value={this.state.email}
@@ -84,7 +82,7 @@ class Form extends Component {
             name="confirmPassword"
             onChange={this.handleInputChange}
             type="password"
-            placeholder="confirmPassword Password"
+            placeholder="confirmPassword"
           />
           <button onClick={this.handleFormSubmit}>Submit</button>
         </form>

@@ -78,7 +78,7 @@ class HQContainer extends React.Component {
         </ReactModal>
         <div className="card" onClick={this.handleOpenNew}>
           <div className="card-body">
-            <h5 className="card-title">Add HQ</h5>
+            <h5 className="card-title"><button></button></h5>
           </div>
         </div>
       </div>

@@ -5,10 +5,18 @@
   display: block;
   margin-top: 5px;
   margin-bottom: 5px;
-  width: 30%;
+  margin-left: 80px;
+  width: 50%;
 }
-.formDiv {
-  width: 20%;
-  margin: 0;
+.formDivSI {
+  width: 350px;
+  height: 150px;
+  margin-left: 510px;
+  margin-top: 100px; 
   position: absolute;
+  background-color: rgb(117, 130, 146);
+  text-align: center;
+}
+.fontSI {
+  color: white;
 }

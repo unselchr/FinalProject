@@ -59,7 +59,8 @@ class Form extends Component {
   render() {
     // Notice how each input has a `value`, `name`, and `onChange` prop
     return (
-      <div className="formDiv">
+      <div className="formDivSI">
+      <p className="fontSI">Sign In</p>
         <form className="form">
           <input
             value={this.state.email}

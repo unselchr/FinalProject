@@ -24,9 +24,8 @@ class Nav extends React.Component {
         this.setState({ isLoggedIn: button });
       })
       .catch(err => console.log(err));
-
-    
   }
+  
   render() {
       return (
         <nav id="Navbar1" className="navbar navbar-expand-lg navbar-light bg-light">
@@ -47,10 +46,10 @@ class Nav extends React.Component {
                   <a className="dropdown-item" href="/savedRosters">Saved Rosters</a>
                 </div>
               </li>
+            </ul>
               <div className="nav-item">
                   {this.state.isLoggedIn}
               </div>
-            </ul>
             <img id="NavLogo" href="/Home" src="http://www.sourcecomicsandgames.com/wp-content/uploads/2018/04/warhammer-40k-logo.png" alt="WH40K Logo" />
           </div>
         </nav>

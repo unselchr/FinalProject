@@ -1,5 +1,5 @@
 html { 
-    background: url("http://www.4usky.com/data/out/24/164198711-dark-space-wallpapers.jpg") no-repeat center center fixed; 
+    background: url("./thumb-1920-601973.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -8,9 +8,10 @@ html {
     z-index: -1;
   }
 .welcomeDiv {
-    height: 300px;
+    height: 200px;
     width: 300px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(134, 140, 146);
+    padding-top: 30px;
     position: relative;
     z-index: auto;
     margin-left: 200px;
@@ -18,12 +19,27 @@ html {
     border-color: black;
     border-width: 5px;
     text-align: center;
+    z-index: 1;
 }
-.columnDiv {
+/* .columnDiv {
     height: 100vh;
     width: 700px;
     background-color: rgb(243, 245, 238);
     position: absolute;
     z-index: 1;
     margin-left: 330px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+} */
+.welSI {
+    margin-left: 112px;
+    position: absolute;
+    z-index: 2;
+}
+.welSU {
+    margin-left: 110px;
+    margin-top: 30px;
+    position: absolute;
+    z-index: 2;
 }
