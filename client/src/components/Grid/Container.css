@@ -10,7 +10,7 @@ html {
 .welcomeDiv {
     height: 200px;
     width: 300px;
-    background-color: rgb(134, 140, 146);
+    background-color: rgb(185, 188, 190);
     padding-top: 30px;
     position: relative;
     z-index: auto;
@@ -35,11 +35,14 @@ html {
 .welSI {
     margin-left: 112px;
     position: absolute;
-    z-index: 2;
+    z-index: 3;
 }
 .welSU {
     margin-left: 110px;
     margin-top: 30px;
     position: absolute;
-    z-index: 2;
+    z-index: 3;
+}
+.welcomeFont {
+    color: white;
 }
