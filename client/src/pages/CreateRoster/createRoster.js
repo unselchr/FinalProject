@@ -4,12 +4,12 @@ import React from "react";
 import HQContainer from "./../../components/HQContainer";
 // const CreateRoster = () => (]
 import units from "./../../utils/units";
+
 class CreateRoster extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       units: props.units || []
-
     }
   }
   addHQ=function(){
@@ -44,13 +44,13 @@ class CreateRoster extends React.Component {
             <h5 className="mb-0">
               <button className="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 TROOPS
-        </button>
+              </button>
             </h5>
           </div>
           <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
             <div className="card-body">
               Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
+            </div>
           </div>
         </div>
 
@@ -59,13 +59,13 @@ class CreateRoster extends React.Component {
             <h5 className="mb-0">
               <button className="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 ELITES
-        </button>
+              </button>
             </h5>
           </div>
           <div id="collapseThree" className="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
             <div className="card-body">
               Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
+            </div>
           </div>
         </div>
 
@@ -75,13 +75,13 @@ class CreateRoster extends React.Component {
             <h5 className="mb-0">
               <button className="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 FAST ATTACK
-        </button>
+              </button>
             </h5>
           </div>
           <div id="collapseFour" className="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
             <div className="card-body">
               Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
+            </div>
           </div>
         </div>
 
@@ -90,13 +90,13 @@ class CreateRoster extends React.Component {
             <h5 className="mb-0">
               <button className="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 HEAVY SUPPORT
-        </button>
+              </button>
             </h5>
           </div>
           <div id="collapseFive" className="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
             <div className="card-body">
               Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
+            </div>
           </div>
         </div>
 
@@ -105,13 +105,13 @@ class CreateRoster extends React.Component {
             <h5 className="mb-0">
               <button className="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 LORD OF WAR
-        </button>
+              </button>
             </h5>
           </div>
           <div id="collapseSix" className="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
             <div className="card-body">
               Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
+            </div>
           </div>
         </div>
 
@@ -120,13 +120,13 @@ class CreateRoster extends React.Component {
             <h5 className="mb-0">
               <button className="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 TRANSPORT
-        </button>
+              </button>
             </h5>
           </div>
           <div id="collapseSeven" className="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
             <div className="card-body">
               Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
+            </div>
           </div>
         </div>
 
@@ -135,13 +135,13 @@ class CreateRoster extends React.Component {
             <h5 className="mb-0">
               <button className="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 FLYER
-        </button>
+              </button>
             </h5>
           </div>
           <div id="collapseEight" className="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
             <div className="card-body">
               Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
+            </div>
           </div>
         </div>
 
@@ -150,13 +150,13 @@ class CreateRoster extends React.Component {
             <h5 className="mb-0">
               <button className="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 FORTIFICATION
-        </button>
+              </button>
             </h5>
           </div>
           <div id="collapseNine" className="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
             <div className="card-body">
               Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
+            </div>
           </div>
         </div>
       </div>

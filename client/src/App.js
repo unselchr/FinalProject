@@ -7,7 +7,6 @@ import Home from "./pages/Home";
 import SignUp from "./pages/signUp";
 import SignIn from "./pages/signIn";
 import RosterContainer from "./pages/CreateRoster";
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
 
 const App=()=>(
   <Router>
