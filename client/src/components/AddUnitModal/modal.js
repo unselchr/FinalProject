@@ -10,6 +10,7 @@ class modal extends React.Component {
     this.state={
       options:props.options
     }
+    console.log(this.props);
   }
   render(){
     return(
@@ -17,7 +18,7 @@ class modal extends React.Component {
         {this.state.options?(
           <div>
             {this.state.options.map(unit => (
-              <Unit name={unit.name} points={unit.points} powerLevel={unit.powerLevel} img={unit.img} clickHandler={this.props.clickHandler}/>
+              <Unit name={unit.name} points={unit.points} powerLevel={unit.powerLevel} img={unit.img} clickHandler={this.props.clickHandler}next={this.props.next}/>
             ))}
           </div>
         ):(null)}
