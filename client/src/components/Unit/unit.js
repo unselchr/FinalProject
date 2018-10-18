@@ -13,7 +13,8 @@ class Unit extends React.Component {
       points: this.props.points||-1,
       powerLevel: this.props.powerLevel||-1,
       img: this.props.img||"",
-      clickHandler:this.props.clickHandler.bind(this)
+      clickHandler:this.props.clickHandler.bind(this),
+      next:this.props.next
     }
   }
   render() {
