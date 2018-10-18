@@ -1,12 +1,12 @@
 html { 
-    background: url("./thumb-1920-601973.jpg") no-repeat center center fixed; 
+    background: url("../Grid/thumb-1920-601973.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     position: relative;
     z-index: -1;
-  }
+}
 .welcomeDiv {
     height: 200px;
     width: 300px;

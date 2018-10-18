@@ -1,10 +1,19 @@
-
+html { 
+    background: url("../thumb-1920-601973.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+}
 .welcomeDiv {
     height: 200px;
     width: 300px;
     background-color: rgb(185, 188, 190);
     padding-top: 30px;
     position: relative;
+    z-index: auto;
     margin-left: 200px;
     margin-top: 100px;
     border-color: black;
@@ -36,20 +45,4 @@
 }
 .welcomeFont {
     color: white;
-}
-.col-md-8 {
-    width: 535px;
-    height: 200px;
-    margin: 0 auto;
-}
-.panel-heading .accordion-toggle:after {
-    /* symbol for "opening" panels */
-    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
-    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
-    float: right;        /* adjust as needed */
-    color: grey;         /* adjust as needed */
-}
-.panel-heading .accordion-toggle.collapsed:after {
-    /* symbol for "collapsed" panels */
-    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
 }

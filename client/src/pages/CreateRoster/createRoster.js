@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row, Container } from "../../components/Grid";
+// import { Col, Row, Container } from "../../components/Grid";
 //import Jumbotron from "../../components/Jumbotron";
 import HQContainer from "./../../components/HQContainer";
 // const CreateRoster = () => (]
@@ -20,8 +20,8 @@ class CreateRoster extends React.Component {
   }
   render() {
     return (
-    <div className="col-md-7">
-      <div className="btnIndex">
+    <div className="col-md-8">
+      <div className="text-center">
         <div className="btn-group" role="group" aria-label="Basic example">
           <button type="button" className="btn btn-secondary">CHAOS</button>
           <button type="button" className="btn btn-secondary">IMPERIUM</button>
@@ -29,7 +29,6 @@ class CreateRoster extends React.Component {
           <button type="button" className="btn btn-secondary">FORGE WORLD</button>
         </div>
       </div>
-
       <div className="accordion" id="accordionExample">
         <div className="card">
           <div className="card-header" id="headingOne">
@@ -37,7 +36,7 @@ class CreateRoster extends React.Component {
               <button className="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">HQ</button>
             </h5>
           </div>
-          <div id="collapseOne" className="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div id="collapseOne" className="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
           <HQContainer addHQ={this.addHQ} min={this.state.minHQ} max={this.state.maxHQ} units={this.state.hqs} />
           </div>
         </div>

@@ -58,7 +58,7 @@ class HQContainer extends React.Component {
       let units=this.state.units;
       //console.log(units);
       let newUnits=units.push(newUnit);
-      //console.log(newUnits);
+      console.log(newUnits);
       //this.setState({ units:newUnits},()=>{console.log(this.state.units)});
     }
     
