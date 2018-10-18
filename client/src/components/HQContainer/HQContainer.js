@@ -47,13 +47,19 @@ class HQContainer extends React.Component {
   }
   addHQNext=function(newUnit){
     //console.log("!!!!!!!!!!!!")
-    console.log(newUnit);
+    //console.log(newUnit);
     //console.log(this.state);
     if(!this.state.units){
-      this.setState({units:[newUnit]});
+      this.setState({ units: [newUnit] });
+      //console.log("making units for first time?");
     }
     else{
-      this.setState({ units: this.state.units.push(newUnit) });
+      //console.log(newUnit);
+      let units=this.state.units;
+      //console.log(units);
+      let newUnits=units.push(newUnit);
+      //console.log(newUnits);
+      //this.setState({ units:newUnits},()=>{console.log(this.state.units)});
     }
     
   }
