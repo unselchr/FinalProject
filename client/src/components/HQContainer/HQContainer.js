@@ -15,17 +15,29 @@ class HQContainer extends React.Component {
       min: props.min,
       max: props.max,
       showNewModal: false,
-      showEditModal: false
+      showEditModal: false,
+      selectedId:-1
     }
     this.handleOpenEdit = this.handleOpenEdit.bind(this);
     this.handleCloseEdit = this.handleCloseEdit.bind(this);
     this.handleOpenNew = this.handleOpenNew.bind(this);
     this.handleCloseNew = this.handleCloseNew.bind(this);
     this.addHQNext=this.addHQNext.bind(this);
+    this.handleChange=this.handleChange.bind(this);
   }
-
+  handleChange=(event)=>{
+    let value = event.target.value;
+    const name = event.target.name;
+    const unitId = event.target.id;
+    console.log(value,name,unitId);
+    let unit=this.state.units[unitId];
+    console.log(unit);
+    //console.log(event);
+    //console.log(this);
+  }
   handleOpenEdit() {
-    this.setState({ showEditModal: true });
+    this.setState({ showEditModal: true,selectedId:0 });
+    //console.log(this);
   }
   handleCloseEdit() {
     this.setState({ showEditModal: false });
@@ -61,24 +73,27 @@ class HQContainer extends React.Component {
       //console.log(newUnits);
       //this.setState({ units:newUnits},()=>{console.log(this.state.units)});
     }
-    
+    this.handleCloseNew();
   }
   render() {
     return (
       <div>
         {this.state.units ? (
           <div>
-            {this.state.units.map(unit => (
-              <Unit name={unit.name} points={unit.points} powerLevel={unit.powerLevel} img={unit.img} clickHandler={this.handleOpenEdit} next={this.addHQNext}/>
+            {this.state.units.map((unit,index) => (
+              <Unit id={index} key={index} name={unit.name} points={unit.points} powerLevel={unit.powerLevel} img={unit.img} clickHandler={this.handleOpenEdit.bind(index)} next={this.addHQNext}/>
             ))}
           </div>
         ) : (null)
         
         }
-        <ReactModal isOpen={this.state.showEditModal} contentLabel="Edit unit">
+        <ReactModal ariaHideApp={false} onRequestClose={this.handleCloseEdit} isOpen={this.state.showEditModal} contentLabel="Edit unit">
+          <form>
+            <input id={this.state.selectedId} value={this.state.points} name="points" type="number" onChange={this.handleChange}/>
+          </form>
           <button onClick={this.handleCloseEdit}>Save</button>
         </ReactModal>
-        <ReactModal isOpen={this.state.showNewModal} contentLabel="New unit">
+        <ReactModal ariaHideApp={false} onRequestClose={this.handleCloseNew} isOpen={this.state.showNewModal} contentLabel="New unit">
           <NewUnitModal options={units.hq} next={this.addHQNext} clickHandler={this.addHQ}/>
           <button onClick={this.handleCloseNew}>Close</button>
         </ReactModal>

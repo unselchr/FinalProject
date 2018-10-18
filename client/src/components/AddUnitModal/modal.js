@@ -10,15 +10,15 @@ class modal extends React.Component {
     this.state={
       options:props.options
     }
-    console.log(this.props);
+    //console.log(this.props);
   }
   render(){
     return(
       <div>
         {this.state.options?(
           <div>
-            {this.state.options.map(unit => (
-              <Unit name={unit.name} points={unit.points} powerLevel={unit.powerLevel} img={unit.img} clickHandler={this.props.clickHandler}next={this.props.next}/>
+            {this.state.options.map((unit,index) => (
+              <Unit key={index} name={unit.name} points={unit.points} powerLevel={unit.powerLevel} img={unit.img} clickHandler={this.props.clickHandler}next={this.props.next}/>
             ))}
           </div>
         ):(null)}

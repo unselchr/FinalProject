@@ -13,8 +13,9 @@ class Unit extends React.Component {
       points: this.props.points||-1,
       powerLevel: this.props.powerLevel||-1,
       img: this.props.img||"",
-      clickHandler:this.props.clickHandler.bind(this),
-      next:this.props.next
+      clickHandler:this.props.clickHandler.bind(this,this.props.id),
+      next:this.props.next,
+      id:this.props.id
     }
   }
   render() {
@@ -22,7 +23,7 @@ class Unit extends React.Component {
       <div className="card" onClick={this.state.clickHandler}>
         <img className="card-img-top" src={this.state.img} alt="Unit icon not found" />
         <div className="card-body">
-          <h5 className="card-title">{this.state.name}</h5>
+          <h5 className="card-title">{this.state.name}   {this.props.id}</h5>
           <p className="card-text">{"Points: " + this.state.points+"   Power Level: "+this.state.powerLevel}</p>
         </div>
       </div>
