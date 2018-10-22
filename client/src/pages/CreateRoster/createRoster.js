@@ -1,4 +1,5 @@
 import React from "react";
+// import ReactDOM from 'react-dom';
 // import { Col, Row, Container } from "../../components/Grid";
 //import Jumbotron from "../../components/Jumbotron";
 import HQContainer from "./../../components/HQContainer";
