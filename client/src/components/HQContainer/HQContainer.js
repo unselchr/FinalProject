@@ -7,6 +7,7 @@ import Unit from "../Unit";
 import NewUnitModal from "./../AddUnitModal";
 import units from "./../../utils/units";
 import ReactModal from "react-modal";
+import { updateLocale } from "moment";
 class HQContainer extends React.Component {
   constructor(props) {
     super(props);
@@ -32,6 +33,14 @@ class HQContainer extends React.Component {
     console.log(value,name,unitId);
     let unit=this.state.units[unitId];
     console.log(unit);
+    console.log(this);
+    const units=this.state.units;
+    units[unitId].points=value;
+    this.setState({
+      units
+    })
+    // unit.points=value;
+    // this.forceUpdate();
     //console.log(event);
     //console.log(this);
   }

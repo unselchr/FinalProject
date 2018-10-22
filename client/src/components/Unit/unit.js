@@ -18,6 +18,9 @@ class Unit extends React.Component {
       id:this.props.id
     }
   }
+  componentWillReceiveProps(newProp){
+    this.setState(newProp)
+  }
   render() {
     return (
       <div className="card" onClick={this.state.clickHandler}>
