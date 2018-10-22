@@ -22,6 +22,7 @@ class CreateRoster extends React.Component {
   render() {
     return (
     <div className="col-md-8">
+
       <div className="text-center">
         <div className="btn-group" role="group" aria-label="Basic example">
           <button type="button" className="btn btn-secondary">CHAOS</button>
@@ -30,7 +31,9 @@ class CreateRoster extends React.Component {
           <button type="button" className="btn btn-secondary">FORGE WORLD</button>
         </div>
       </div>
+
       <div className="accordion" id="accordionExample">
+      
         <div className="card">
           <div className="card-header" id="headingOne">
             <h5 className="mb-0">

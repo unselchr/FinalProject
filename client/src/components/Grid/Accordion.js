@@ -1,38 +1,30 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
- 
-import {
-    Accordion,
-    AccordionItem,
-    AccordionItemTitle,
-    AccordionItemBody,
-} from 'react-accessible-accordion';
- 
-// Demo styles, see 'Styles' section below for some notes on use.
-import 'react-accessible-accordion/dist/fancy-example.css';
- 
-const Example = () => (
-    <Accordion>
-        <AccordionItem>
-            <AccordionItemTitle>
-                <h3>Simple title</h3>
-            </AccordionItemTitle>
-            <AccordionItemBody>
-                <p>Body content</p>
-            </AccordionItemBody>
-        </AccordionItem>
-        <AccordionItem>
-            <AccordionItemTitle>
-                <h3>Complex title</h3>
-                <div>With a bit of description</div>
-            </AccordionItemTitle>
-            <AccordionItemBody>
-                <p>Body content</p>
-            </AccordionItemBody>
-        </AccordionItem>
-    </Accordion>
-);
- 
-ReactDOM.render(<Example />, document.querySelector('[data-mount]'));
+class Accordion extends React.Component {
+    constructor() {
+      super();
+      this._handleClick = this._handleClick.bind(this);
+    }
+  
+    componentDidMount() {
+      this._handleClick();
+    }
+  
+    _handleClick() {
+      const acc = this._acc.children;
+      for (let i = 0; i < acc.length; i++) {
+        let a = acc[i];
+        a.onclick = () => a.classList.toggle("active");
+      }
+    }
+  
+    render() {
+      return (
+        <div 
+          ref={a => this._acc = a} 
+          onClick={this._handleClick}>
+          {this.props.children}
+        </div>
+      )
+    }
+  }
 
-export default Accordion.js;
+  export default Accordion;
