@@ -44,8 +44,8 @@ class HQContainer extends React.Component {
     //console.log(event);
     //console.log(this);
   }
-  handleOpenEdit() {
-    this.setState({ showEditModal: true,selectedId:0 });
+  handleOpenEdit(id) {
+    this.setState({ showEditModal: true,selectedId:id });
     //console.log(this);
   }
   handleCloseEdit() {
@@ -78,8 +78,9 @@ class HQContainer extends React.Component {
       //console.log(newUnit);
       let units=this.state.units;
       //console.log(units);
-      let newUnits=units.push(newUnit);
-      console.log(newUnits);
+      units.push(newUnit);
+      this.setState(units);
+      //console.log(newUnits);
       //this.setState({ units:newUnits},()=>{console.log(this.state.units)});
     }
     this.handleCloseNew();

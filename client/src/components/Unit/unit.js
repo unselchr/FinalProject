@@ -17,13 +17,17 @@ class Unit extends React.Component {
       next:this.props.next,
       id:this.props.id
     }
+    this.newClickHandler=this.newClickHandler.bind(this);
   }
   componentWillReceiveProps(newProp){
-    this.setState(newProp)
+    this.setState(newProp);
+  }
+  newClickHandler(){
+    this.state.clickHandler(this.state.id)
   }
   render() {
     return (
-      <div className="card" onClick={this.state.clickHandler}>
+      <div className="card" onClick={this.newClickHandler}>
         <img className="card-img-top" src={this.state.img} alt="Unit icon not found" />
         <div className="card-body">
           <h5 className="card-title">{this.state.name}   {this.props.id}</h5>
