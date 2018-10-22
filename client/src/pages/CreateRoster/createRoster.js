@@ -33,22 +33,22 @@ class CreateRoster extends React.Component {
       </div>
 
       <div className="accordion" id="accordionExample">
-      
+
         <div className="card">
           <div className="card-header" id="headingOne">
             <h5 className="mb-0">
-              <button className="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">HQ</button>
+              <button className="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">HQ</button>
             </h5>
           </div>
           <div id="collapseOne" className="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-          <HQContainer addHQ={this.addHQ} min={this.state.minHQ} max={this.state.maxHQ} units={this.state.hqs} />
+            <HQContainer addHQ={this.addHQ} min={this.state.minHQ} max={this.state.maxHQ} units={this.state.hqs} />
           </div>
         </div>
 
         <div className="card">
           <div className="card-header" id="headingTwo">
             <h5 className="mb-0">
-              <button className="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <button className="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 TROOPS
               </button>
             </h5>
@@ -63,7 +63,7 @@ class CreateRoster extends React.Component {
         <div className="card">
           <div className="card-header" id="headingThree">
             <h5 className="mb-0">
-              <button className="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <button className="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 ELITES
               </button>
             </h5>
@@ -79,7 +79,7 @@ class CreateRoster extends React.Component {
         <div className="card">
           <div className="card-header" id="headingFour">
             <h5 className="mb-0">
-              <button className="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <button className="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 FAST ATTACK
               </button>
             </h5>
@@ -94,7 +94,7 @@ class CreateRoster extends React.Component {
         <div className="card">
           <div className="card-header" id="headingFive">
             <h5 className="mb-0">
-              <button className="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <button className="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 HEAVY SUPPORT
               </button>
             </h5>
@@ -109,7 +109,7 @@ class CreateRoster extends React.Component {
         <div className="card">
           <div className="card-header" id="headingSix">
             <h5 className="mb-0">
-              <button className="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <button className="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 LORD OF WAR
               </button>
             </h5>
@@ -124,7 +124,7 @@ class CreateRoster extends React.Component {
         <div className="card">
           <div className="card-header" id="headingSeven">
             <h5 className="mb-0">
-              <button className="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <button className="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 TRANSPORT
               </button>
             </h5>
@@ -139,7 +139,7 @@ class CreateRoster extends React.Component {
         <div className="card">
           <div className="card-header" id="headingEight">
             <h5 className="mb-0">
-              <button className="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <button className="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 FLYER
               </button>
             </h5>
@@ -154,7 +154,7 @@ class CreateRoster extends React.Component {
         <div className="card">
           <div className="card-header" id="headingNine">
             <h5 className="mb-0">
-              <button className="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <button className="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 FORTIFICATION
               </button>
             </h5>
