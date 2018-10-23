@@ -8,7 +8,7 @@ const NoMatch = () => (
     <div className="welcomeDiv">
       <h3>404 Page Not Found</h3>
         <h1>
-          <img class="NMimg" src="http://img2.wikia.nocookie.net/__cb20120423083444/40k/images/d/d0/Ork_icon.png" alt="Waagh"/>
+          <img className="NMimg" src="http://img2.wikia.nocookie.net/__cb20120423083444/40k/images/d/d0/Ork_icon.png" alt="Waagh"/>
         </h1>
     </div>
   </div>

@@ -30,7 +30,7 @@ class Unit extends React.Component {
       <div className="card" onClick={this.newClickHandler}>
         <img className="card-img-top" src={this.state.img} alt="Unit icon not found" />
         <div className="card-body">
-          <h5 className="card-title">{this.state.name}   {this.props.id}</h5>
+          <h5 className="card-title">{this.state.name}</h5>
           <p className="card-text">{"Points: " + this.state.points+"   Power Level: "+this.state.powerLevel}</p>
         </div>
       </div>

@@ -11,13 +11,63 @@ class CreateRoster extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      units: props.units || []
+      units: props.units || [],
+      hq:{
+        points:0,
+        powerLevel:0
+      },
+      troops: {
+        points: 0,
+        powerLevel: 0
+      },
+      elites: {
+        points: 0,
+        powerLevel: 0
+      },
+      fastAttack: {
+        points: 0,
+        powerLevel: 0
+      },
+      heavySupport: {
+        points: 0,
+        powerLevel: 0
+      },
+      lordOfWar: {
+        points: 0,
+        powerLevel: 0
+      },
+      transport: {
+        points: 0,
+        powerLevel: 0
+      },
+      flyer: {
+        points: 0,
+        powerLevel: 0
+      },
+      fortification: {
+        points: 0,
+        powerLevel: 0
+      },
+      totalPoints:0,
+      totalPowerLevel:0
     }
+    this.getNums=this.getNums.bind(this);
+    this.updateNums=this.updateNums.bind(this);
   }
   addHQ=function(){
     const hqs=units.hq;
     console.log(hqs);
     
+  }
+  updateNums(){
+    let pt = this.state.hq.points + this.state.troops.points + this.state.elites.points + this.state.fastAttack.points + this.state.heavySupport.points + this.state.lordOfWar.points + this.state.transport.points + this.state.flyer.points + this.state.fortification.points;
+    let pl = this.state.hq.powerLevel + this.state.troops.powerLevel + this.state.elites.powerLevel + this.state.fastAttack.powerLevel + this.state.heavySupport.powerLevel + this.state.lordOfWar.powerLevel + this.state.transport.powerLevel + this.state.flyer.powerLevel + this.state.fortification.powerLevel;
+    this.setState({totalPoints:pt,totalPowerLevel:pl});
+    console.log(pt,pl);
+  }
+  getNums(nums){
+    //console.log(nums);
+    this.setState({[nums.category]:{points:nums.points,powerLevel:nums.powerLevel}},()=>this.updateNums());
   }
   render() {
     return (
@@ -31,17 +81,18 @@ class CreateRoster extends React.Component {
           <button type="button" className="btn btn-secondary">FORGE WORLD</button>
         </div>
       </div>
-
+      
       <div className="accordion" id="accordionExample">
-
+          <h5>Points:{this.state.totalPoints} PowerLevel:{this.state.totalPowerLevel}</h5>
         <div className="card">
           <div className="card-header" id="headingOne">
             <h5 className="mb-0">
               <button className="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">HQ</button>
+              <p>Points:{this.state.hq.points} PowerLevel:{this.state.hq.powerLevel}</p>
             </h5>
           </div>
           <div id="collapseOne" className="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-            <HQContainer addHQ={this.addHQ} min={this.state.minHQ} max={this.state.maxHQ} units={this.state.hqs} />
+              <HQContainer returnNums={this.getNums} addHQ={this.addHQ} min={this.state.minHQ} max={this.state.maxHQ} units={this.state.hqs} />
           </div>
         </div>
 
