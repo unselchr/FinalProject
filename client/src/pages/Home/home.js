@@ -20,10 +20,10 @@ class Home extends Component{
             <p className="welcomeFont">Welcome, Conscript! Sign in or Sign up and build your 40K Roster.</p>
             <div className="welcomeInput">
               <div className="welSI">
-                <a class="welcomeSI" href="/signin">Sign In</a>
+                <button class="welcomeSI" href="/signin">Sign In</button>
               </div>
               <div className="welSU">
-                <a class="welcomeSU" href="/signup">Sign Up</a>
+                <button class="welcomeSU" href="/signup">Sign Up</button>
               </div>
             </div>
           </div>

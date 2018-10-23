@@ -135,7 +135,7 @@ class HQContainer extends React.Component {
         <div className="card" onClick={this.handleOpenNew}>
           <div className="card-body">
             <button>
-              <h5 className="card-title">&#43; HQ</h5>
+              <h5 className="card-title">&#43;HQ</h5>
             </button>
           </div>
         </div>
