@@ -26,8 +26,9 @@ class Unit extends React.Component {
     this.state.clickHandler(this.state.id)
   }
   render() {
+    console.log(__dirname+this.state.img);
     return (
-      <div className="card" onClick={this.newClickHandler}>
+      <div className="card unitCard" onClick={this.newClickHandler}>
         <img className="card-img-top" src={this.state.img} alt="Unit icon not found" />
         <div className="card-body">
           <h5 className="card-title">{this.state.name}</h5>
