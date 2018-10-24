@@ -1,4 +1,9 @@
 .card-img-top {
     height:100px;
-    width:300px;
+    width:100px;
+    align-self:center;
+}
+.unitCard {
+    word-wrap: break-word;
+    width:200px;
 }
