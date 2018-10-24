@@ -4,4 +4,12 @@
     color: #777;
     float: right;
     margin-left: 5px;
+    height:200px;
+    width:100px;
+}
+.cardCharacter {
+    width:100px;
+}
+.card {
+    width:300px;
 }

@@ -112,7 +112,7 @@ class HQContainer extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className="cardCharacter">
         {this.state.units ? (
           <div>
             {this.state.units.map((unit, index) => (

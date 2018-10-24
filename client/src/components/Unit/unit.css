@@ -1,4 +1,4 @@
-.unitCard{
-  height: 350px;
-  width:200px;
+.card-img-top {
+    height:100px;
+    width:300px;
 }
