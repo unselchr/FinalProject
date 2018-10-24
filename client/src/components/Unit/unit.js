@@ -26,7 +26,7 @@ class Unit extends React.Component {
     this.state.clickHandler(this.state.id)
   }
   render() {
-    // console.log(__dirname+this.state.img);
+    //console.log(__dirname+this.state.img);
     return (
     
         <div className="row d-inline-block">
