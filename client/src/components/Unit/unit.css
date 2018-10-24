@@ -5,5 +5,11 @@
 }
 .unitCard {
     word-wrap: break-word;
-    width:200px;
+    width:210px;
+    border-color: black;
+    border:solid;
+    border:1px;
+}
+.row {
+    padding:14px;
 }
