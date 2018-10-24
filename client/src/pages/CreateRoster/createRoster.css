@@ -37,7 +37,7 @@
     color: white;
 }
 .col-md-8 {
-    width: 535px;
+    width: auto;
     height: 200px;
     margin: 0 auto;
 }
