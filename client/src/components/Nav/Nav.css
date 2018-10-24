@@ -4,7 +4,7 @@
 #NavLogo {
     position: relative;
     left: 50%;
-    margin: -270px !important;  /* 50% of your logo width */
+    margin: -260px !important;  /* 50% of your logo width */
     /* display: block; */
     height: 50px;
     width: 150px;
