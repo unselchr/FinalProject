@@ -6,7 +6,7 @@ import HQContainer from "./../../components/HQContainer";
 // const CreateRoster = () => (]
 import units from "./../../utils/units";
 import "./createRoster.css";
-
+import TroopContainer from "./../../components/TroopsContainer";
 class CreateRoster extends React.Component {
   constructor(props) {
     super(props);
@@ -92,7 +92,7 @@ class CreateRoster extends React.Component {
             </h5>
           </div>
           <div id="collapseOne" className="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-              <HQContainer returnNums={this.getNums} addHQ={this.addHQ} min={this.state.minHQ} max={this.state.maxHQ} units={this.state.hqs} />
+              <HQContainer returnNums={this.getNums} min={this.state.minHQ} max={this.state.maxHQ} units={[]} />
           </div>
         </div>
 
@@ -102,11 +102,12 @@ class CreateRoster extends React.Component {
               <button className="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 TROOPS
               </button>
+                <p>Points:{this.state.troops.points} PowerLevel:{this.state.troops.powerLevel}</p>
             </h5>
           </div>
           <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
             <div className="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                <TroopContainer returnNums={this.getNums} min={this.state.minHQ} max={this.state.maxHQ} units={[]}/>
             </div>
           </div>
         </div>
