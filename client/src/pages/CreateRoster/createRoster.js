@@ -10,7 +10,7 @@ import TroopContainer from "./../../components/TroopsContainer";
 import FastAttackContainer from "./../../components/FastAttackContainer";
 import EliteContainer from "./../../components/ElitesContainer";
 import FortificationContainer from "./../../components/FortificationContainer";
-import FlyerContainer from "./../../components/FortificationContainer";
+import FlyerContainer from "./../../components/FlyerContainer";
 import HeavySupportContainer from "./../../components/HeavySupportContainer";
 import LordOfWarContainer from "./../../components/LordOfWarContainer";
 import TransportContainer from "./../../components/TransportContainer";
