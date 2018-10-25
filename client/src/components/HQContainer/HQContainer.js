@@ -112,9 +112,9 @@ class HQContainer extends React.Component {
   }
   render() {
     return (
-      <div className="cardCharacter">
+      <div>
         {this.state.units ? (
-          <div className="card-deck">
+          <div className="card-deck mx-auto">
             {this.state.units.map((unit, index) => (
               <Unit id={index} key={index} name={unit.name} points={unit.points} powerLevel={unit.powerLevel} img={unit.img} clickHandler={this.handleOpenEdit.bind(index)} next={this.addHQNext} />
             ))}
