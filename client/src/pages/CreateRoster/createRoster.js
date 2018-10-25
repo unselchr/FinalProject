@@ -11,7 +11,9 @@ import FastAttackContainer from "./../../components/FastAttackContainer";
 import EliteContainer from "./../../components/ElitesContainer";
 import FortificationContainer from "./../../components/FortificationContainer";
 import FlyerContainer from "./../../components/FortificationContainer";
-
+import HeavySupportContainer from "./../../components/HeavySupportContainer";
+import LordOfWarContainer from "./../../components/LordOfWarContainer";
+import TransportContainer from "./../../components/TransportContainer";
 class CreateRoster extends React.Component {
   constructor(props) {
     super(props);
@@ -155,11 +157,12 @@ class CreateRoster extends React.Component {
                 <button className="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
                   HEAVY SUPPORT
               </button>
+                  <p>Points:{this.state.heavySupport.points} PowerLevel:{this.state.heavySupport.powerLevel}</p>
               </h5>
             </div>
             <div id="collapseFive" className="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
               <div className="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                <HeavySupportContainer returnNums={this.getNums} min={this.state.minHQ} max={this.state.maxHQ} units={[]} />
             </div>
             </div>
           </div>
@@ -170,11 +173,12 @@ class CreateRoster extends React.Component {
                 <button className="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
                   LORD OF WAR
               </button>
+                  <p>Points:{this.state.lordOfWar.points} PowerLevel:{this.state.lordOfWar.powerLevel}</p>
               </h5>
             </div>
             <div id="collapseSix" className="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
               <div className="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  <LordOfWarContainer returnNums={this.getNums} min={this.state.minHQ} max={this.state.maxHQ} units={[]} />
             </div>
             </div>
           </div>
@@ -185,11 +189,12 @@ class CreateRoster extends React.Component {
                 <button className="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
                   TRANSPORT
               </button>
+                  <p>Points:{this.state.transport.points} PowerLevel:{this.state.transport.powerLevel}</p>
               </h5>
             </div>
             <div id="collapseSeven" className="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
               <div className="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  <TransportContainer returnNums={this.getNums} min={this.state.minHQ} max={this.state.maxHQ} units={[]} />
             </div>
             </div>
           </div>
