@@ -6,14 +6,16 @@ import HQContainer from "./../../components/HQContainer";
 // const CreateRoster = () => (]
 import units from "./../../utils/units";
 import "./createRoster.css";
-import TroopContainer from "./../../components/TroopsContainer";
-import FastAttackContainer from "./../../components/FastAttackContainer";
-import EliteContainer from "./../../components/ElitesContainer";
-import FortificationContainer from "./../../components/FortificationContainer";
-import FlyerContainer from "./../../components/FlyerContainer";
-import HeavySupportContainer from "./../../components/HeavySupportContainer";
-import LordOfWarContainer from "./../../components/LordOfWarContainer";
-import TransportContainer from "./../../components/TransportContainer";
+// import TroopContainer from "./../../components/TroopsContainer";
+// import FastAttackContainer from "./../../components/FastAttackContainer";
+// import EliteContainer from "./../../components/ElitesContainer";
+// import FortificationContainer from "./../../components/FortificationContainer";
+// import FlyerContainer from "./../../components/FlyerContainer";
+// import HeavySupportContainer from "./../../components/HeavySupportContainer";
+// import LordOfWarContainer from "./../../components/LordOfWarContainer";
+// import TransportContainer from "./../../components/TransportContainer";
+//above imports are commented instead of deleted as a monument to human stupidity
+import UnitTypeContainer from "./../../components/UnitTypeContainer";
 class CreateRoster extends React.Component {
   constructor(props) {
     super(props);
@@ -99,7 +101,7 @@ class CreateRoster extends React.Component {
               </h5>
             </div>
             <div id="collapseOne" className="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-              <HQContainer returnNums={this.getNums} min={this.state.minHQ} max={this.state.maxHQ} units={[]} />
+              <UnitTypeContainer type="hq" returnNums={this.getNums} min={this.state.minHQ} max={this.state.maxHQ} units={[]} />
             </div>
           </div>
 
@@ -114,7 +116,7 @@ class CreateRoster extends React.Component {
             </div>
             <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
               <div className="card-body">
-                <TroopContainer returnNums={this.getNums} min={this.state.minHQ} max={this.state.maxHQ} units={[]} />
+                <UnitTypeContainer type="troops" returnNums={this.getNums} min={this.state.minHQ} max={this.state.maxHQ} units={[]} />
               </div>
             </div>
           </div>
@@ -130,7 +132,7 @@ class CreateRoster extends React.Component {
           </div>
           <div id="collapseThree" className="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
             <div className="card-body">
-                <EliteContainer returnNums={this.getNums} min={this.state.minHQ} max={this.state.maxHQ} units={[]} />
+                <UnitTypeContainer type="elites" returnNums={this.getNums} min={this.state.minHQ} max={this.state.maxHQ} units={[]} />
             </div>
           </div>
 
@@ -146,7 +148,7 @@ class CreateRoster extends React.Component {
             </div>
             <div id="collapseFour" className="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
               <div className="card-body">
-                <FastAttackContainer returnNums={this.getNums} min={this.state.minHQ} max={this.state.maxHQ} units={[]} />
+                  <UnitTypeContainer type="fastAttack" returnNums={this.getNums} min={this.state.minHQ} max={this.state.maxHQ} units={[]} />
               </div>
             </div>
           </div>
@@ -162,7 +164,7 @@ class CreateRoster extends React.Component {
             </div>
             <div id="collapseFive" className="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
               <div className="card-body">
-                <HeavySupportContainer returnNums={this.getNums} min={this.state.minHQ} max={this.state.maxHQ} units={[]} />
+                  <UnitTypeContainer type="heavySupport" returnNums={this.getNums} min={this.state.minHQ} max={this.state.maxHQ} units={[]} />
             </div>
             </div>
           </div>
@@ -178,7 +180,7 @@ class CreateRoster extends React.Component {
             </div>
             <div id="collapseSix" className="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
               <div className="card-body">
-                  <LordOfWarContainer returnNums={this.getNums} min={this.state.minHQ} max={this.state.maxHQ} units={[]} />
+                  <UnitTypeContainer type="lordOfWar" returnNums={this.getNums} min={this.state.minHQ} max={this.state.maxHQ} units={[]} />
             </div>
             </div>
           </div>
@@ -194,7 +196,7 @@ class CreateRoster extends React.Component {
             </div>
             <div id="collapseSeven" className="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
               <div className="card-body">
-                  <TransportContainer returnNums={this.getNums} min={this.state.minHQ} max={this.state.maxHQ} units={[]} />
+                  <UnitTypeContainer type="transport" returnNums={this.getNums} min={this.state.minHQ} max={this.state.maxHQ} units={[]} />
             </div>
             </div>
           </div>
@@ -210,7 +212,7 @@ class CreateRoster extends React.Component {
             </div>
             <div id="collapseEight" className="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
               <div className="card-body">
-              <FlyerContainer returnNums={this.getNums} min={this.state.minHQ} max={this.state.maxHQ} units={[]} />
+                  <UnitTypeContainer type="flyer" returnNums={this.getNums} min={this.state.minHQ} max={this.state.maxHQ} units={[]} />
             </div>
             </div>
           </div>
@@ -226,7 +228,7 @@ class CreateRoster extends React.Component {
             </div>
             <div id="collapseNine" className="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
               <div className="card-body">
-              <FortificationContainer returnNums={this.getNums} min={this.state.minHQ} max={this.state.maxHQ} units={[]} />
+                  <UnitTypeContainer type="fortification" returnNums={this.getNums} min={this.state.minHQ} max={this.state.maxHQ} units={[]} />
             </div>
             </div>
           </div>
