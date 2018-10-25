@@ -29,7 +29,6 @@ class Unit extends React.Component {
     //console.log(__dirname+this.state.img);
     return (
     
-        <div className="row d-inline-block">
           <div className="card unitCard" onClick={this.newClickHandler}>
               <img className="card-img-top" src={this.state.img} alt="Unit icon not found" />
             <div className="card-body">
@@ -37,7 +36,6 @@ class Unit extends React.Component {
               <p className="card-text">{"Points: " + this.state.points+"   Power Level: "+this.state.powerLevel}</p>
             </div>
           </div>
-        </div>
     )
   }
 }
