@@ -43,7 +43,7 @@ const units={
   fortification:[
     {name:"Aegis Defense Line",points:75,powerLevel:4,img:"/pics/aegisDefenceLine.jpg"},
     {name:"Skyshield Landing Pad",points:110,powerLevel:6,img:"/pics/skyshieldLandingPad.jpg"},
-    {name:"Void Shield Generator",points:190,powerLevel:9,img:"/pics/voidShieldGenerator.jpg"}
+    {name:"Void Shield Generator",points:190,powerLevel:9,img:"/pics/voidshieldGen.jpg"}
   ]
 }
 export default units;
