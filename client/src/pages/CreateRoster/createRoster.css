@@ -44,8 +44,3 @@
 button:hover {
     background: rgb(195, 195, 201);
 }
-.card {
-    border-color: black;
-    border: 1px;
-    border: solid;
-}
