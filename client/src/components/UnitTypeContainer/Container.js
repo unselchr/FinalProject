@@ -128,6 +128,7 @@ class UnitTypeContainer extends React.Component {
         }
         <ReactModal className="modModal" ariaHideApp={false} onRequestClose={this.handleCloseEdit} isOpen={this.state.showEditModal} contentLabel="Edit unit">
           <form>
+            <h3>Edit Point Value</h3>
             <input id={this.state.selectedId} value={this.state.points} name="points" type="number" onChange={this.handleChange} />
           </form>
           <button onClick={this.handleCloseEdit}>Close</button>
