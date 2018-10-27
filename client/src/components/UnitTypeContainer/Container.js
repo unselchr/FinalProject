@@ -7,6 +7,8 @@ import Unit from "../Unit";
 import NewUnitModal from "../AddUnitModal";
 import units from "../../utils/units";
 import ReactModal from "react-modal";
+import "./Container.css";
+
 //import { updateLocale } from "moment";
 class UnitTypeContainer extends React.Component {
   constructor(props) {
@@ -116,7 +118,7 @@ class UnitTypeContainer extends React.Component {
     return (
       <div>
         {this.state.units ? (
-          <div className="card-deck mx-auto">
+          <div className="card-columns mx-auto">
             {this.state.units.map((unit, index) => (
               <Unit id={index} key={index} name={unit.name} points={unit.points} powerLevel={unit.powerLevel} img={unit.img} clickHandler={this.handleOpenEdit.bind(index)} next={this.addHQNext} />
             ))}
@@ -124,11 +126,11 @@ class UnitTypeContainer extends React.Component {
         ) : (null)
 
         }
-        <ReactModal ariaHideApp={false} onRequestClose={this.handleCloseEdit} isOpen={this.state.showEditModal} contentLabel="Edit unit">
+        <ReactModal className="modModal" ariaHideApp={false} onRequestClose={this.handleCloseEdit} isOpen={this.state.showEditModal} contentLabel="Edit unit">
           <form>
             <input id={this.state.selectedId} value={this.state.points} name="points" type="number" onChange={this.handleChange} />
           </form>
-          <button onClick={this.handleCloseEdit}>Save</button>
+          <button onClick={this.handleCloseEdit}>Close</button>
         </ReactModal>
         <ReactModal ariaHideApp={false} onRequestClose={this.handleCloseNew} isOpen={this.state.showNewModal} contentLabel="New unit">
           <NewUnitModal options={units[this.state.type]} next={this.addHQNext} clickHandler={this.addHQ} />
