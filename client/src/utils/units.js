@@ -27,7 +27,7 @@ const units={
     {name:"Wyvern",points:103,powerLevel:6,img:"/pics/wyvern.jpg"}
   ],
   lordOfWar:[
-    {name:"Baneblade",points:456,powerLevel:28,img:"/pics/baneBlade.jpg"},
+    {name:"BANEBLADE",points:456,powerLevel:28,img:"/pics/baneBlade.jpg"},
     {name:"Banehammer",points:404,powerLevel:26,img:"/pics/banehammer.jpg"},
     {name:"Banesword",points:404,powerLevel:26,img:"/pics/banehammer.jpg"},
     {name:"Doomhammer",points:434,powerLevel:27,img:"/pics/doomhammer.jpg"},
