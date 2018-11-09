@@ -4,13 +4,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 //import Popper from 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import "./Roster.css";
+import DivisionContainer from "./../DivisionContainer";
 class Roster extends React.Component{
     constructor(props){
         super(props);
         this.state={
             name:this.props.name||"new roster",
             points:0,
-            powerLevel:0
+            powerLevel:0,
+            divisions:this.props.divisions
         }
         this.editClickHandler=this.editClickHandler.bind(this);
     }
@@ -21,8 +23,19 @@ class Roster extends React.Component{
     //
     render(){
         return(
-            <div className="rosterContainer">
-                
+            <div className="rosterContainer accordion" id="rosterAccordion">
+                {this.state.divisions ? (
+                    this.state.divisions.map((division,index)=>(
+                        <div className="card">
+                            <div className="card-header" id={"heading"+index}>
+                                <button className="btn collapsed" type="button" data-toggle="collapse" data-target={"#collapse"+index} aria-expanded="true" aria-controls={"collapse"+index}>Laurum Ipsom</button>
+                            </div>
+                            <div id={"collapse"+index} className="collapse" aria-labelledby={"heading"+index} data-parent="#rosterAccordion">
+                                <DivisionContainer className="" id={index} division={division}/>
+                            </div>
+                        </div>
+                    ))
+                ):("Click add division to get started")}
             </div>
         )
     }
