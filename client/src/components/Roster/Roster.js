@@ -19,4 +19,11 @@ class Roster extends React.Component{
 
     }
     //
+    render(){
+        return(
+            <div className="rosterContainer">
+                
+            </div>
+        )
+    }
 }
