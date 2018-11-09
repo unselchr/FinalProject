@@ -2,11 +2,11 @@
   "development": {
     "username": "root",
     "password": "Cu3043598",
-
     "database": "haeresis",
     "host": "127.0.0.1",
     "port": 3306,
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "logging":false
   },
   "test": {
     "username": "root",
@@ -17,11 +17,11 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "port": 3306,
-    "dialect": "mysql"
+    "username": "b9e63a2c9d730b",
+    "password": "0585a550",
+    "database": "heroku_9194e18544b5902",
+    "host": "us-cdbr-iron-east-01.cleardb.net",
+    "dialect": "mysql",
+    "logging": false
   }
 }

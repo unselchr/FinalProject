@@ -26,16 +26,23 @@ module.exports = function (app, passport) {
     })
   );
   app.post(
-    "/signin", (req, res, next) => {
-      passport.authenticate("local-signin", (err, user, info) => {
-        if (err) { return next(err); }
-        if (!user) { return res.send("signIn"); }
-        req.logIn(user, err => {
-          if (err) { return next(err); }
-          return (res.send(""));
-        })
-      })(req, res, next);
-    });
+    "/signin",
+    passport.authenticate("local-signin"),
+    function(req,res){
+      res.redirect("/home");
+    }
+  );
+  // app.post(
+  //   "/signin", (req, res, next) => {
+  //     passport.authenticate("local-signin", (err, user, info) => {
+  //       if (err) { return next(err); }
+  //       if (!user) { return res.send("signIn"); }
+  //       req.logIn(user, err => {
+  //         if (err) { return next(err); }
+  //         return (res.send("/home"));
+  //       })
+  //     })(req, res, next);
+  //   });
   app.get("/logout", authController.logout);
   function isLoggedIn(req, res, next) {
     if (req.isAuthenticated()) {

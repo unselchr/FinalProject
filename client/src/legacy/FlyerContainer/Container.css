@@ -1,0 +1,9 @@
+.card-title {
+    /* content: '\02795'; Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+    height:200px;
+    width:100px;
+}

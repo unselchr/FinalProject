@@ -16,6 +16,7 @@ const App=()=>(
       <Switch>
         <Route exact path="/"component={Home}/>
         <Route exact path="/Home" component={Home} />
+        <Route exact path="/home" component={Home} />
         <Route exact path="/signUp"component={SignUp} />
         <Route exact path="/signIn"component={SignIn}/>
         <Route exact path="/newRoster"component={RosterContainer}/>

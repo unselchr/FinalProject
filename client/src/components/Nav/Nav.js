@@ -43,7 +43,7 @@ class Nav extends React.Component {
                   <a className="dropdown-item" href="/signup">Sign Up</a>
                   <a className="dropdown-item" href="/signin">Sign In</a>
                   <a className="dropdown-item" href="/newRoster">Create Roster</a>
-                  <a className="dropdown-item" href="/savedRosters">Saved Rosters</a>
+                  {/* <a className="dropdown-item" href="/savedRosters">Saved Rosters</a> */}
                 </div>
               </li>
             </ul>
