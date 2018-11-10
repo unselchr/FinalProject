@@ -1,21 +1,8 @@
 import React from "react";
-// import ReactDOM from 'react-dom';
-// import { Col, Row, Container } from "../../components/Grid";
-//import Jumbotron from "../../components/Jumbotron";
-//import HQContainer from "./../../components/HQContainer";
-// const CreateRoster = () => (]
 import units from "./../../utils/units";
 import "./createRoster.css";
-// import TroopContainer from "./../../components/TroopsContainer";
-// import FastAttackContainer from "./../../components/FastAttackContainer";
-// import EliteContainer from "./../../components/ElitesContainer";
-// import FortificationContainer from "./../../components/FortificationContainer";
-// import FlyerContainer from "./../../components/FlyerContainer";
-// import HeavySupportContainer from "./../../components/HeavySupportContainer";
-// import LordOfWarContainer from "./../../components/LordOfWarContainer";
-// import TransportContainer from "./../../components/TransportContainer";
-//above imports are commented instead of deleted as a monument to human stupidity
 import UnitTypeContainer from "./../../components/UnitTypeContainer";
+import Roster from "./../../components/Roster";
 class CreateRoster extends React.Component {
   constructor(props) {
     super(props);
@@ -91,7 +78,7 @@ class CreateRoster extends React.Component {
           </div>
         </div>
 
-        <div className="accordion" id="accordionExample">
+        {/* <div className="accordion" id="accordionExample">
           <h5>Points:{this.state.totalPoints} PowerLevel:{this.state.totalPowerLevel}</h5>
           <div className="card">
             <div className="card-header" id="headingOne">
@@ -233,7 +220,7 @@ class CreateRoster extends React.Component {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
     )
   }
