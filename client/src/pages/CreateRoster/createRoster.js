@@ -77,7 +77,7 @@ class CreateRoster extends React.Component {
             <button type="button" className="btn btn-secondary">FORGE WORLD</button>
           </div>
         </div>
-
+          <Roster/>
         {/* <div className="accordion" id="accordionExample">
           <h5>Points:{this.state.totalPoints} PowerLevel:{this.state.totalPowerLevel}</h5>
           <div className="card">
@@ -115,113 +115,113 @@ class CreateRoster extends React.Component {
                   ELITES
               </button>
                 <p>Points:{this.state.elites.points} PowerLevel:{this.state.elites.powerLevel}</p>
-            </h5>
-          </div>
-          <div id="collapseThree" className="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-            <div className="card-body">
-                <UnitTypeContainer type="elites" returnNums={this.getNums} min={this.state.minHQ} max={this.state.maxHQ} units={[]} />
-            </div>
-          </div>
-
-
-          <div className="card">
-            <div className="card-header" id="headingFour">
-              <h5 className="mb-0">
-                <button className="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                  FAST ATTACK
-              </button>
-                <p>Points:{this.state.fastAttack.points} PowerLevel:{this.state.fastAttack.powerLevel}</p>
               </h5>
             </div>
-            <div id="collapseFour" className="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+            <div id="collapseThree" className="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
               <div className="card-body">
+                <UnitTypeContainer type="elites" returnNums={this.getNums} min={this.state.minHQ} max={this.state.maxHQ} units={[]} />
+              </div>
+            </div>
+
+
+            <div className="card">
+              <div className="card-header" id="headingFour">
+                <h5 className="mb-0">
+                  <button className="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    FAST ATTACK
+              </button>
+                  <p>Points:{this.state.fastAttack.points} PowerLevel:{this.state.fastAttack.powerLevel}</p>
+                </h5>
+              </div>
+              <div id="collapseFour" className="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                <div className="card-body">
                   <UnitTypeContainer type="fastAttack" returnNums={this.getNums} min={this.state.minHQ} max={this.state.maxHQ} units={[]} />
+                </div>
+              </div>
+            </div>
+
+            <div className="card">
+              <div className="card-header" id="headingFive">
+                <h5 className="mb-0">
+                  <button className="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                    HEAVY SUPPORT
+              </button>
+                  <p>Points:{this.state.heavySupport.points} PowerLevel:{this.state.heavySupport.powerLevel}</p>
+                </h5>
+              </div>
+              <div id="collapseFive" className="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                <div className="card-body">
+                  <UnitTypeContainer type="heavySupport" returnNums={this.getNums} min={this.state.minHQ} max={this.state.maxHQ} units={[]} />
+                </div>
+              </div>
+            </div>
+
+            <div className="card">
+              <div className="card-header" id="headingSix">
+                <h5 className="mb-0">
+                  <button className="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                    LORD OF WAR
+              </button>
+                  <p>Points:{this.state.lordOfWar.points} PowerLevel:{this.state.lordOfWar.powerLevel}</p>
+                </h5>
+              </div>
+              <div id="collapseSix" className="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                <div className="card-body">
+                  <UnitTypeContainer type="lordOfWar" returnNums={this.getNums} min={this.state.minHQ} max={this.state.maxHQ} units={[]} />
+                </div>
+              </div>
+            </div>
+
+            <div className="card">
+              <div className="card-header" id="headingSeven">
+                <h5 className="mb-0">
+                  <button className="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
+                    TRANSPORT
+              </button>
+                  <p>Points:{this.state.transport.points} PowerLevel:{this.state.transport.powerLevel}</p>
+                </h5>
+              </div>
+              <div id="collapseSeven" className="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                <div className="card-body">
+                  <UnitTypeContainer type="transport" returnNums={this.getNums} min={this.state.minHQ} max={this.state.maxHQ} units={[]} />
+                </div>
+              </div>
+            </div>
+
+            <div className="card">
+              <div className="card-header" id="headingEight">
+                <h5 className="mb-0">
+                  <button className="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseThree">
+                    FLYER
+              </button>
+                  <p>Points:{this.state.flyer.points} PowerLevel:{this.state.flyer.powerLevel}</p>
+                </h5>
+              </div>
+              <div id="collapseEight" className="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+                <div className="card-body">
+                  <UnitTypeContainer type="flyer" returnNums={this.getNums} min={this.state.minHQ} max={this.state.maxHQ} units={[]} />
+                </div>
+              </div>
+            </div>
+
+            <div className="card">
+              <div className="card-header" id="headingNine">
+                <h5 className="mb-0">
+                  <button className="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseThree">
+                    FORTIFICATION
+              </button>
+                  <p>Points:{this.state.fastAttack.points} PowerLevel:{this.state.fastAttack.powerLevel}</p>
+                </h5>
+              </div>
+              <div id="collapseNine" className="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
+                <div className="card-body">
+                  <UnitTypeContainer type="fortification" returnNums={this.getNums} min={this.state.minHQ} max={this.state.maxHQ} units={[]} />
+                </div>
               </div>
             </div>
           </div>
-
-          <div className="card">
-            <div className="card-header" id="headingFive">
-              <h5 className="mb-0">
-                <button className="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
-                  HEAVY SUPPORT
-              </button>
-                  <p>Points:{this.state.heavySupport.points} PowerLevel:{this.state.heavySupport.powerLevel}</p>
-              </h5>
-            </div>
-            <div id="collapseFive" className="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-              <div className="card-body">
-                  <UnitTypeContainer type="heavySupport" returnNums={this.getNums} min={this.state.minHQ} max={this.state.maxHQ} units={[]} />
-            </div>
-            </div>
-          </div>
-
-          <div className="card">
-            <div className="card-header" id="headingSix">
-              <h5 className="mb-0">
-                <button className="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
-                  LORD OF WAR
-              </button>
-                  <p>Points:{this.state.lordOfWar.points} PowerLevel:{this.state.lordOfWar.powerLevel}</p>
-              </h5>
-            </div>
-            <div id="collapseSix" className="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
-              <div className="card-body">
-                  <UnitTypeContainer type="lordOfWar" returnNums={this.getNums} min={this.state.minHQ} max={this.state.maxHQ} units={[]} />
-            </div>
-            </div>
-          </div>
-
-          <div className="card">
-            <div className="card-header" id="headingSeven">
-              <h5 className="mb-0">
-                <button className="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
-                  TRANSPORT
-              </button>
-                  <p>Points:{this.state.transport.points} PowerLevel:{this.state.transport.powerLevel}</p>
-              </h5>
-            </div>
-            <div id="collapseSeven" className="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
-              <div className="card-body">
-                  <UnitTypeContainer type="transport" returnNums={this.getNums} min={this.state.minHQ} max={this.state.maxHQ} units={[]} />
-            </div>
-            </div>
-          </div>
-
-          <div className="card">
-            <div className="card-header" id="headingEight">
-              <h5 className="mb-0">
-                <button className="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseThree">
-                  FLYER
-              </button>
-                <p>Points:{this.state.flyer.points} PowerLevel:{this.state.flyer.powerLevel}</p>
-              </h5>
-            </div>
-            <div id="collapseEight" className="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
-              <div className="card-body">
-                  <UnitTypeContainer type="flyer" returnNums={this.getNums} min={this.state.minHQ} max={this.state.maxHQ} units={[]} />
-            </div>
-            </div>
-          </div>
-
-          <div className="card">
-            <div className="card-header" id="headingNine">
-              <h5 className="mb-0">
-                <button className="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseThree">
-                  FORTIFICATION
-              </button>
-                <p>Points:{this.state.fastAttack.points} PowerLevel:{this.state.fastAttack.powerLevel}</p>
-              </h5>
-            </div>
-            <div id="collapseNine" className="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
-              <div className="card-body">
-                  <UnitTypeContainer type="fortification" returnNums={this.getNums} min={this.state.minHQ} max={this.state.maxHQ} units={[]} />
-            </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
-    </div>
+        </div> */}
+      </div>
     )
   }
 };

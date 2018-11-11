@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import "./Roster.css";
 import DivisionContainer from "./../DivisionContainer";
+import ReactModal from "react-modal";
 class Roster extends React.Component{
     constructor(props){
         super(props);
@@ -12,7 +13,7 @@ class Roster extends React.Component{
             name:this.props.name||"new roster",
             points:0,
             powerLevel:0,
-            divisions:this.props.divisions
+            divisions:this.props.divisions||[]
         }
         this.editClickHandler=this.editClickHandler.bind(this);
     }
@@ -24,7 +25,8 @@ class Roster extends React.Component{
     render(){
         return(
             <div className="rosterContainer accordion" id="rosterAccordion">
-                {this.state.divisions ? (
+                <h5>{this.state.name}: Points:{this.state.points} PowerLevel:{this.state.powerLevel}</h5>
+                {this.state.divisions != [] ? (
                     this.state.divisions.map((division,index)=>(
                         <div className="card">
                             <div className="card-header" id={"heading"+index}>
@@ -36,7 +38,10 @@ class Roster extends React.Component{
                         </div>
                     ))
                 ):("Click add division to get started")}
+                
             </div>
         )
     }
 }
+
+export default Roster;
